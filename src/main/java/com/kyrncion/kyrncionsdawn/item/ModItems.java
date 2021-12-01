@@ -13,7 +13,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, KyrncionsDawn.MOD_ID);
 
-    //Materials
+    // Materials
 
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
@@ -25,6 +25,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
     public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
+    public static final RegistryObject<Item> TITANIUM = ITEMS.register("titanium",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
+    // Shields
+
+    public static final RegistryObject<Item> TESTSHIELD = ITEMS.register("testshield",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
     public static void register(IEventBus eventBus) {

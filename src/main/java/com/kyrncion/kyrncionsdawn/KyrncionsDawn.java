@@ -1,5 +1,6 @@
 package com.kyrncion.kyrncionsdawn;
 
+import com.kyrncion.kyrncionsdawn.block.ModBlocks;
 import com.kyrncion.kyrncionsdawn.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,6 +32,7 @@ public class KyrncionsDawn {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
