@@ -16,6 +16,9 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
+    public static final RegistryObject<Item> BLACK_DIAMOND = ITEMS.register("black_diamond",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
